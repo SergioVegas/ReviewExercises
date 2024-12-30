@@ -2,12 +2,19 @@
 
  namespace reviewexercises
 {
-    public static void Main()
+    public class ExercicisRepas
     {
+        public static void Main()
+        {
+         int seconds = int.Parse(Console.ReadLine());
+         ConvertHour(seconds);
+        }
+        public static string ConvertHour(int seconds)
+        {
+            const int nsMinuts = 60;
+            seconds/60 
 
-    
-    //Constants
-    const string MsgSegons = "Introdueix un numero positiu i el passarem a hores, minuts i segons restants";
+            return "";
+        }
     }
-
 }
