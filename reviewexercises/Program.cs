@@ -1,5 +1,5 @@
 ﻿using System;
-
+using MyLibrary;
  namespace reviewexercises
 {
     public class ExercicisRepas
