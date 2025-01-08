@@ -1,4 +1,5 @@
 ﻿using System;
+using LibraryMath;
 using MyLibrary;
  namespace reviewexercises
 {
@@ -6,15 +7,17 @@ using MyLibrary;
     {
         public static void Main()
         {
-         int seconds = int.Parse(Console.ReadLine());
-         ConvertHour(seconds);
-        }
-        public static string ConvertHour(int seconds)
-        {
-            const int nsMinuts = 60;
-            seconds/60 
+           int restantMinuts = 0;
+            int restantSeconds= 0;
+            int hours = 0;
+            try 
+            { 
+            int seconds = int.Parse(Console.ReadLine());
+            }
+            catch (FormatException){ Console.WriteLine("Introdueix el numero correctament"); }
 
-            return "";
+            EX1.ConvertMinutes(seconds);
         }
+
     }
 }
