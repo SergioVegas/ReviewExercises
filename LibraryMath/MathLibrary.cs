@@ -2,34 +2,34 @@
 {
     public class EX1
     {
+        const int DivisionMinutesHours = 60;
         public static int ConvertMinutes(int seconds)
         {
             int minuts;
-            const int DivisionMinutesHours = 60;
+            
             minuts = seconds / DivisionMinutesHours;
 
             return minuts;
         }
         public static int RestantSeconds(int seconds)
         {
-            const int DivisionMinutsHours = 60;
-            seconds = seconds % DivisionMinutsHours;
+            seconds = seconds % DivisionMinutesHours;
 
             return seconds;
         }
-        public static int ConvertHour(int seconds, int minuts)
+        public static int ConvertHour(int seconds)
         {
-            const int DivisionMinutsHours = 60;
             int hour;
+            int minuts = ConvertMinutes(seconds);
 
-            hour = minuts / DivisionMinutsHours;
+            hour = minuts / DivisionMinutesHours;
 
             return hour;
         }
-        public static int RestantMinutes(int minuts)
+        public static int RestantMinutes(int seconds)
         {
-            const int DivisionMinutsHours = 60;
-            minuts = minuts % DivisionMinutsHours;
+            int minuts = ConvertMinutes(seconds);
+            minuts = minuts % DivisionMinutesHours;
 
             return minuts;
         }
