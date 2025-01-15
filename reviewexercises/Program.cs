@@ -2,9 +2,9 @@
 using MyLibrary;
  namespace reviewexercises
 {
-    public class EX3
+    public class exercicis
     {
-        public class Exercici3
+        public class Exercici5
         {
             public static void Main()
             {
